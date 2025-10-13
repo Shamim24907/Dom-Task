@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Dom Practice Playground</h1>
+
+    <!-- 1️⃣ Toggle Dark Mode -->
+    <h2> Toggle Dark Mode</h2>
+    <button id="darkModeBtn">Toggle Dark Mode</button>
+
+    <!-- 2️⃣ Display User Input -->
+    <div class="section">
+        <h2> Display User Input</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="showNameBtn">Greet Me</button>
+        <p id="greetP"></p>
+    </div>
+
+    <!-- 3️⃣ Image Gallery Navigation -->
+    <h2> Image Gallery Navigation</h2>
+    <div class="section gallery">
+        <button id="prev">Previous</button>
+        <img id="galleryImg" src="images/pic1.jpg" alt="Gallery Image">
+        <button id="next">Next</button>
+    </div>
+
+    <!-- 4️⃣ Form Validation Message -->
+
+    <div class="section">
+        <h2> Form Validation Message</h2>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <button id="submitBtn">Submit</button>
+        <p id="errorMsg"></p>
+    </div>
+
+    <!-- 5️⃣ Character Counter -->
+    <div class="section">
+        <h2> Character Counter</h2>
+        <textarea id="tweetInput" placeholder="Compose your tweet..." rows="4" cols="50"></textarea>
+        <p id="charCount">240 characters remaining</p>
+    </div>
+
+    <!-- Task 6 -->
+    <div class="task" id="task6">
+        <h2> Accordion FAQ Section</h2>
+        <div class="faq">
+            <div class="question">What is JavaScript?</div>
+            <div class="answer">JavaScript is a programming language used to make web pages interactive.</div>
+        </div>
+        <div class="faq">
+            <div class="question">What is DOM?</div>
+            <div class="answer">DOM stands for Document Object Model — it represents HTML as objects you can manipulate.
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">What is an Event?</div>
+            <div class="answer">Events are actions or occurrences that happen in the browser, like clicks or keypresses.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Task 7 -->
+    <div class="task" id="task7">
+        <h2> Shopping Cart Counter</h2>
+        <button class="addToCart">Add to Cart 🛒</button>
+        <p>Items in cart: <span id="cartCount">0</span></p>
+    </div>
+
+    <!-- Task 8 -->
+    <div class="task" id="task8">
+        <h2>Hover Tooltip</h2>
+        <div class="tooltip-container">
+            <img src="images/product.jpg" alt="Product" width="200" id="productImage">
+            <div class="tooltip">This is a cool product! 💫</div>
+        </div>
+    </div>
+
+    <!-- Task 9 -->
+    <div class="task" id="task9">
+        <h2>Double-Click to Edit</h2>
+        <ul id="todoList">
+            <li>Learn JavaScript</li>
+            <li>Practice DOM Manipulation</li>
+            <li>Build 50 Projects </li>
+        </ul>
+    </div>
+
+    <!-- Task 10 -->
+    <div class="task" id="task10">
+        <h2>Prevent Form Submission</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <p id="formError"></p>
+    </div>
+
+
+    <!--Task 11 Add Comments Section -->
+    <div class="mini-section" id="task-comments">
+        <h3>Add Comments</h3>
+        <textarea id="commentInput" placeholder="Write a comment..." rows="3"></textarea>
+        <div class="row">
+            <button id="postCommentBtn">Post Comment</button>
+        </div>
+        <ul id="commentList" class="list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
