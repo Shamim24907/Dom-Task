@@ -132,7 +132,7 @@ const commentList = document.getElementById("commentList");
 
 postCommentBtn.addEventListener("click", () => {
   const text = commentInput.value.trim();
-  if (!text) return; 
+  if (!text) return;
 
   const li = document.createElement("li");
   li.textContent = text;
@@ -146,3 +146,25 @@ postCommentBtn.addEventListener("click", () => {
   commentList.appendChild(li);
   commentInput.value = "";
 });
+
+// ---- Task 12: Remove List Items (Grocery) ----
+const groceryInput = document.getElementById("groceryInput");
+const addGroceryBtn = document.getElementById("addGroceryBtn");
+const groceryList = document.getElementById("groceryList");
+
+addGroceryBtn.addEventListener("click", () => {
+  const item = groceryInput.value.trim();
+  if (!item) return;
+
+  const li = document.createElement("li");
+  li.textContent = item;
+
+  const rem = document.createElement("button");
+  rem.textContent = "✖";
+  rem.className = "remove-btn";
+  rem.addEventListener("click", () => li.remove());
+
+  li.appendChild(rem);
+  groceryList.appendChild(li);
+  groceryInput.value = "";
+  });
